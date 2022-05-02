@@ -9,14 +9,18 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Верхняя линия -->
     <header class="header">
-      <div class="topline">
-        <a href="#" class="logo"><span>Web</span>Studio</a>
+      <div class="topline container">
         <nav class="menu-nav">
+          <a href="#" class="logo"><span>Web</span>Studio</a>
           <ul class="nav-list">
             <li><a class="nav-link" href="./index.html">Студия</a></li>
             <li><a class="nav-link activ-nav" href="./portfolio.html">Портфолио</a></li>
@@ -34,19 +38,21 @@
       </div>
     </header>
     <main>
-      <section class="filters">
+      <section class="filters container">
         <h1 class="visualy-hiden">Портфолио</h1>
         <ul class="filters-list">
           <li class="filters-item">
             <button class="filters-btn aktiv-btn">Все</button>
           </li>
-          <li class="filter-item"><button class="filters-btn" type="button">Веб-сайты</button></li>
-          <li class="filter-item"><button class="filters-btn" type="button">Приложения</button></li>
-          <li class="filter-item"><button class="filters-btn" type="button">Дизайн</button></li>
-          <li class="filter-item"><button class="filters-btn" type="button">Маркетинг</button></li>
+          <li class="filters-item"><button class="filters-btn" type="button">Веб-сайты</button></li>
+          <li class="filters-item">
+            <button class="filters-btn" type="button">Приложения</button>
+          </li>
+          <li class="filters-item"><button class="filters-btn" type="button">Дизайн</button></li>
+          <li class="filters-item"><button class="filters-btn" type="button">Маркетинг</button></li>
         </ul>
       </section>
-      <section class="projects">
+      <section class="projects container">
         <h2 class="visualy-hiden">Наши проекты</h2>
         <ul class="projects-list">
           <li class="projects-item">
@@ -58,8 +64,10 @@
                 width="370"
                 height="294"
               />
-              <h3 class="project-title">Технокряк</h3>
-              <p class="project-description">Веб-сайт</p>
+              <div class="project-description">
+                <h3 class="project-title">Технокряк</h3>
+                <p>Веб-сайт</p>
+              </div>
             </a>
           </li>
           <li class="projects-item">
@@ -71,8 +79,10 @@
                 width="370"
                 height="294"
               />
-              <h3 class="project-title">Постер New Orlean vs Golden Star</h3>
-              <p class="project-description">Дизайн</p>
+              <div class="project-description">
+                <h3 class="project-title">Постер New Orlean vs Golden Star</h3>
+                <p>Дизайн</p>
+              </div>
             </a>
           </li>
           <li class="projects-item">
@@ -84,8 +94,10 @@
                 width="370"
                 height="294"
               />
-              <h3 class="project-title">Ресторан Seafood</h3>
-              <p class="project-description">Приложение</p>
+              <div class="project-description">
+                <h3 class="project-title">Ресторан Seafood</h3>
+                <p>Приложение</p>
+              </div>
             </a>
           </li>
           <li class="projects-item">
@@ -97,8 +109,10 @@
                 width="370"
                 height="294"
               />
-              <h3 class="project-title">Проект Prime</h3>
-              <p class="project-description">Маркетинг</p>
+              <div class="project-description">
+                <h3 class="project-title">Проект Prime</h3>
+                <p>Маркетинг</p>
+              </div>
             </a>
           </li>
           <li class="projects-item">
@@ -110,8 +124,10 @@
                 width="370"
                 height="294"
               />
-              <h3 class="project-title">Проект Boxes</h3>
-              <p class="project-description">Приложение</p>
+              <div class="project-description">
+                <h3 class="project-title">Проект Boxes</h3>
+                <p>Приложение</p>
+              </div>
             </a>
           </li>
           <li class="projects-item">
@@ -123,8 +139,10 @@
                 width="370"
                 height="294"
               />
-              <h3 class="project-title">Inspiration has no Borders</h3>
-              <p class="project-description">Веб-сайт</p>
+              <div class="project-description">
+                <h3 class="project-title">Inspiration has no Borders</h3>
+                <p>Веб-сайт</p>
+              </div>
             </a>
           </li>
           <li class="projects-item">
@@ -136,8 +154,10 @@
                 width="370"
                 height="294"
               />
-              <h3 class="project-title">Издание Limited Edition</h3>
-              <p class="project-description">Дизайн</p>
+              <div class="project-description">
+                <h3 class="project-title">Издание Limited Edition</h3>
+                <p>Дизайн</p>
+              </div>
             </a>
           </li>
           <li class="projects-item">
@@ -149,8 +169,10 @@
                 width="370"
                 height="294"
               />
-              <h3 class="project-title">Проект LAB</h3>
-              <p class="project-description">Маркетинг</p>
+              <div class="project-description">
+                <h3 class="project-title">Проект LAB</h3>
+                <p>Маркетинг</p>
+              </div>
             </a>
           </li>
           <li class="projects-item">
@@ -162,8 +184,10 @@
                 width="370"
                 height="294"
               />
-              <h3 class="project-title">Growing Business</h3>
-              <p class="project-description">Приложение</p>
+              <div class="project-description">
+                <h3 class="project-title">Growing Business</h3>
+                <p>Приложение</p>
+              </div>
             </a>
           </li>
         </ul>
@@ -171,13 +195,11 @@
     </main>
     <!-- Футтер -->
     <footer class="footer">
-      <div>
+      <div class="footer-content container">
         <a href="#" class="logo footer-logo"><span>Web</span>Studio</a>
-        <address>
+        <address class="address">
+          <p>г. Киев, пр-т Леси Украинки, 26</p>
           <ul class="address-list">
-            <li class="address-item">
-              <p>г. Киев, пр-т Леси Украинки, 26</p>
-            </li>
             <li class="address-item">
               <a href="mailto:info@example.com">info@example.com</a>
             </li>
