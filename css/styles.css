@@ -6,6 +6,7 @@
   --white-color: #ffffff;
   --background-color-light: #f5f4fa;
   --card-set-gap: 30px;
+  --hero-background-color: #2f303a40;
 }
 
 body {
@@ -109,6 +110,18 @@ p {
   color: var(--text-color);
 }
 
+.icon-mail::before {
+  content: '';
+  color: transparent;
+  background-color: #2196f3;
+  width: 16px;
+  height: 12px;
+  /* background-image: url('../images/envelope.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+
 .contact-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -120,10 +133,23 @@ p {
 /* Секция Герой */
 
 .hero {
-  background-color: var(--background-color-dark);
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  text-align: center;
+
+  background-image: linear-gradient(
+      to top,
+      var(--hero-background-color),
+      var(--hero-background-color)
+    ),
+    url('../images/hero-img.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-title {
@@ -151,12 +177,11 @@ p {
 
 /* Особенности */
 
-/* Плохая практика!!! Не читабельно для ассистива */
-
 .special {
   padding-top: 94px;
 }
 
+/* Плохая практика!!! Не читабельно для ассистива */
 .visualy-hiden {
   display: none;
 }
@@ -169,6 +194,18 @@ p {
 
 .special-item {
   max-width: 270px;
+}
+
+.special-icon {
+  background-color: var(--background-color-light);
+  margin-bottom: 30px;
+  padding: 25px 100px;
+}
+
+.special-icon svg {
+  max-width: 70px;
+  max-height: 70px;
+  display: block;
 }
 
 .special-item h3 {
