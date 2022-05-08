@@ -284,6 +284,30 @@ p {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-bottom: 16px;
+}
+
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  fill: var(--svg-color);
+  width: 44px;
+  height: 44px;
+}
+
+.team-social-link:focus,
+.team-social-link:hover,
+.team-social-link:active {
+  background-color: var(--hover-color);
+  fill: var(--white-color);
 }
 
 /* Наши клиенты */
@@ -389,6 +413,7 @@ p {
 /* Соцсети */
 .social {
   margin-left: 70px;
+  margin-top: 12px;
 }
 
 .social-title {
@@ -495,6 +520,13 @@ p {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
+}
+
+.projects-item:hover,
+.projects-item:focus,
+.projects-item:active {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-image {
