@@ -195,7 +195,12 @@ p {
 .special-icon {
   background-color: var(--background-color-light);
   margin-bottom: 30px;
-  padding: 25px 100px;
+  /* padding: 25px 100px; */
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .special-icon svg {
@@ -345,7 +350,6 @@ p {
   align-items: center;
   border: 1px solid var(--svg-color);
   border-radius: 4px;
-  padding: 16px 32px;
   width: 170px;
   height: 92px;
   color: var(--svg-color);
@@ -374,6 +378,7 @@ p {
 
 .footer-content {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -413,7 +418,6 @@ p {
 /* Соцсети */
 .social {
   margin-left: 70px;
-  margin-top: 12px;
 }
 
 .social-title {
@@ -522,9 +526,10 @@ p {
   margin-left: var(--card-set-gap);
 }
 
-.projects-item:hover,
-.projects-item:focus,
-.projects-item:active {
+.projects-link:hover,
+.projects-link:focus,
+.projects-link:active {
+  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
